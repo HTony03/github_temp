@@ -1,0 +1,766 @@
+05-31 10:24:51 [SUCCESS] nonebot | NoneBot is initializing...
+05-31 10:24:51 [INFO] nonebot | Current Env: dev
+05-31 10:24:53 [SUCCESS] nonebot | Succeeded to load plugin "echo" from "nonebot.plugins.echo"
+05-31 10:24:53 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_apscheduler"
+05-31 10:24:53 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_localstore"
+05-31 10:24:54 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_saa"
+05-31 10:24:56 [INFO] nonebot_plugin_bilibili_notifier | 加载上次更新时间2025-05-31 10:10:00(1748657400)
+05-31 10:24:56 [INFO] nonebot_plugin_bilibili_notifier | 推送更新消息的用户：群：{'522261430': ['977787918', '295484232'], '700360042': ['977787918'], '739557': ['693192338', '450374968'], '3546654298868127': ['693192338', '450374968'], '403416569': ['818426360'], '1018101391': ['172219578'], '1083796867': ['295484232']}
+05-31 10:24:56 [INFO] nonebot_plugin_bilibili_notifier | 推送直播消息的用户：群：{'522261430': ['977787918'], '700360042': ['977787918'], '739557': ['693192338', '450374968'], '3546654298868127': ['693192338', '450374968']}
+05-31 10:24:56 [INFO] nonebot_plugin_bilibili_notifier | 屏蔽的消息/群：{}
+05-31 10:24:56 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_bilibili_notifier"
+05-31 10:24:57 [INFO] nonebot_plugin_github_release_notifier | data folder ->  C:\Users\Administrator\AppData\Local\nonebot2\nonebot_plugin_github_release_notifier
+05-31 10:24:57 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_htmlrender"
+05-31 10:24:57 [INFO] nonebot_plugin_github_release_notifier | Initializing nonebot_plugin_github_release_notifier version: 0.1.9
+05-31 10:24:57 [INFO] nonebot_plugin_github_release_notifier | Debug mode is enabled. 
+05-31 10:24:57 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_github_release_notifier" from "src.plugins.nonebot_plugin_github_release_notifier"
+05-31 10:24:57 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_alconna:uniseg" from "nonebot_plugin_alconna.uniseg"
+05-31 10:24:57 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_alconna"
+05-31 10:24:58 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_userinfo"
+05-31 10:24:58 [SUCCESS] nonebot | Succeeded to load plugin "nonebot_plugin_picstatus"
+05-31 10:24:58 [SUCCESS] nonebot | Running NoneBot...
+05-31 10:24:58 [INFO] uvicorn | Started server process [25636]
+05-31 10:24:58 [INFO] uvicorn | Waiting for application startup.
+05-31 10:24:58 [INFO] nonebot_plugin_apscheduler | Scheduler Started
+05-31 10:24:58 [INFO] nonebot_plugin_htmlrender | Browser Starting.
+05-31 10:24:59 [INFO] nonebot_plugin_htmlrender | 使用 Chromium 启动中...
+05-31 10:25:00 [INFO] nonebot_plugin_github_release_notifier | GitHub token is valid.
+05-31 10:25:05 [INFO] uvicorn | Application startup complete.
+05-31 10:25:05 [INFO] uvicorn | Uvicorn running on http://0.0.0.0:6061 (Press CTRL+C to quit)
+05-31 10:25:06 [INFO] uvicorn | ('127.0.0.1', 64352) - "WebSocket /onebot/v11/ws" [accepted]
+05-31 10:25:06 [INFO] nonebot | OneBot V11 | Bot 2165903274 connected
+05-31 10:25:06 [INFO] websockets | connection open
+05-31 10:25:07 [INFO] nonebot_plugin_saa | refresh bot platform target cache Bot(type='OneBot V11', self_id='2165903274')
+05-31 10:25:16 [SUCCESS] nonebot | OneBot V11 2165903274 | [message.group.normal]: Message 10017 from 2761431803@[群:977787918] 'repo.refresh'
+05-31 10:25:16 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+05-31 10:25:16 [SUCCESS] nonebot | OneBot V11 2165903274 | [message.group.normal]: Message 10018 from 2165903274@[群:977787918] 'Refreshing repository data...'
+05-31 10:25:26 [ERROR] nonebot_plugin_github_release_notifier | Failed to notify group 977787918 about commit in HTony03/nonebot_plugin_github_release_notifier: ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='29')
+Traceback (most recent call last):
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\bot.py", line 105, in <module>
+    nonebot.run()
+    │       └ <function run at 0x0000021902134AE0>
+    └ <module 'nonebot' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\nonebot\\__init__.py'>
+
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\__init__.py", line 335, in run
+    get_driver().run(*args, **kwargs)
+    │                 │       └ {}
+    │                 └ ()
+    └ <function get_driver at 0x000002190210AA20>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\drivers\fastapi.py", line 186, in run
+    uvicorn.run(
+    │       └ <function run at 0x000002190250AD40>
+    └ <module 'uvicorn' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x000002190250AF20>
+    └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x000002190250AFC0>
+           │       │   └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+           │       └ <function run at 0x000002197FA1D4E0>
+           └ <module 'asyncio' from 'C:\\Program Files\\Python313\\Lib\\asyncio\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000219061C4E40>
+           │      └ <function Runner.run at 0x000002197FE24E00>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py:70...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002197FE1E840>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 708, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x000002197FE1E7A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 679, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002197FE245E0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 2027, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002197F9EA340>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\message.py", line 476, in check_and_run_matcher
+    await _run_matcher(
+          └ <function _run_matcher at 0x0000021902215300>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\message.py", line 428, in _run_matcher
+    await matcher.run(bot, event, state, stack, dependency_cache)
+          │       │   │    │      │      │      └ {<function _command at 0x0000021902162DE0>: <Task finished name='Task-2727' coro=<_command() done, defined at C:\Program File...
+          │       │   │    │      │      └ <contextlib.AsyncExitStack object at 0x000002190680C050>
+          │       │   │    │      └ {'_prefix': {'command': ('repo', 'refresh'), 'raw_command': 'repo.refresh', 'command_arg': [], 'command_start': '', 'command_...
+          │       │   │    └ GroupMessageEvent(time=1748658317, self_id=2165903274, post_type='message', sub_type='normal', user_id=2761431803, message_ty...
+          │       │   └ Bot(type='OneBot V11', self_id='2165903274')
+          │       └ <function Matcher.run at 0x0000021902162CA0>
+          └ Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 850, in run
+    await self.simple_run(bot, event, state, stack, dependency_cache)
+          │    │          │    │      │      │      └ {<function _command at 0x0000021902162DE0>: <Task finished name='Task-2727' coro=<_command() done, defined at C:\Program File...
+          │    │          │    │      │      └ <contextlib.AsyncExitStack object at 0x000002190680C050>
+          │    │          │    │      └ {'_prefix': {'command': ('repo', 'refresh'), 'raw_command': 'repo.refresh', 'command_arg': [], 'command_start': '', 'command_...
+          │    │          │    └ GroupMessageEvent(time=1748658317, self_id=2165903274, post_type='message', sub_type='normal', user_id=2761431803, message_ty...
+          │    │          └ Bot(type='OneBot V11', self_id='2165903274')
+          │    └ <function Matcher.simple_run at 0x0000021902162C00>
+          └ Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 825, in simple_run
+    await handler(
+          └ Dependent(call=refresh_repo)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\dependencies\__init__.py", line 94, in __call__
+    return await cast(Callable[..., Awaitable[R]], self.call)(**values)
+                 │    │             │         │    │    │       └ {'bot': Bot(type='OneBot V11', self_id='2165903274'), 'event': GroupMessageEvent(time=1748658317, self_id=2165903274, post_ty...
+                 │    │             │         │    │    └ <function refresh_repo at 0x000002190556A3E0>
+                 │    │             │         │    └ Dependent(call=refresh_repo)
+                 │    │             │         └ ~R
+                 │    │             └ <class 'collections.abc.Awaitable'>
+                 │    └ typing.Callable
+                 └ <function cast at 0x000002197F3E0A40>
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\commands.py", line 307, in refresh_repo
+    await check_repo_updates()
+          └ <function check_repo_updates at 0x00000219055CD6C0>
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\repo_activity.py", line 276, in check_repo_updates
+    await notify(
+          └ <function notify at 0x00000219055CD580>
+
+> File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\repo_activity.py", line 198, in notify
+    await bot.send_group_msg(group_id=group_id, message=message)
+          │                           │                 └ MessageSegment(type='text', data={'text': '📜 HTony03/nonebot_plugin_github_release_notifier有新提交\n\n提交信息: fix: flask lint\n提交人...
+          │                           └ 977787918
+          └ Bot(type='OneBot V11', self_id='2165903274')
+
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\adapter\bot.py", line 122, in call_api
+    raise exception
+          └ ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='29')
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\adapter\bot.py", line 97, in call_api
+    result = await self.adapter._call_api(self, api, **data)
+                   │    │       │         │     │      └ {'group_id': 977787918, 'message': MessageSegment(type='text', data={'text': '📜 HTony03/nonebot_plugin_github_release_notifie...
+                   │    │       │         │     └ 'send_group_msg'
+                   │    │       │         └ Bot(type='OneBot V11', self_id='2165903274')
+                   │    │       └ <function Adapter._call_api at 0x00000219022AC680>
+                   │    └ Adapter(name='OneBot V11')
+                   └ Bot(type='OneBot V11', self_id='2165903274')
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\adapters\onebot\v11\adapter.py", line 175, in _call_api
+    return handle_api_result(await self._result_store.fetch(seq, timeout))
+           │                       │    │             │     │    └ 30.0
+           │                       │    │             │     └ 29
+           │                       │    │             └ <function ResultStore.fetch at 0x00000219022AC180>
+           │                       │    └ <nonebot.adapters.onebot.store.ResultStore object at 0x00000219021B9A90>
+           │                       └ Adapter(name='OneBot V11')
+           └ <function handle_api_result at 0x0000021902216200>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\adapters\onebot\v11\utils.py", line 58, in handle_api_result
+    raise ActionFailed(**result)
+          │              └ {'status': 'failed', 'retcode': 1000, 'data': {'message': 'TypeError: t.map is not a function'}, 'echo': '29'}
+          └ <class 'nonebot.adapters.onebot.v11.exception.ActionFailed'>
+
+nonebot.adapters.onebot.v11.exception.ActionFailed: ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='29')
+05-31 10:25:26 [ERROR] nonebot_plugin_github_release_notifier | Failed to notify group 977787918 about issue in HTony03/nonebot_plugin_github_release_notifier: ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='30')
+Traceback (most recent call last):
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\bot.py", line 105, in <module>
+    nonebot.run()
+    │       └ <function run at 0x0000021902134AE0>
+    └ <module 'nonebot' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\nonebot\\__init__.py'>
+
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\__init__.py", line 335, in run
+    get_driver().run(*args, **kwargs)
+    │                 │       └ {}
+    │                 └ ()
+    └ <function get_driver at 0x000002190210AA20>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\drivers\fastapi.py", line 186, in run
+    uvicorn.run(
+    │       └ <function run at 0x000002190250AD40>
+    └ <module 'uvicorn' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x000002190250AF20>
+    └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x000002190250AFC0>
+           │       │   └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+           │       └ <function run at 0x000002197FA1D4E0>
+           └ <module 'asyncio' from 'C:\\Program Files\\Python313\\Lib\\asyncio\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000219061C4E40>
+           │      └ <function Runner.run at 0x000002197FE24E00>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py:70...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002197FE1E840>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 708, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x000002197FE1E7A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 679, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002197FE245E0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 2027, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002197F9EA340>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\message.py", line 476, in check_and_run_matcher
+    await _run_matcher(
+          └ <function _run_matcher at 0x0000021902215300>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\message.py", line 428, in _run_matcher
+    await matcher.run(bot, event, state, stack, dependency_cache)
+          │       │   │    │      │      │      └ {<function _command at 0x0000021902162DE0>: <Task finished name='Task-2727' coro=<_command() done, defined at C:\Program File...
+          │       │   │    │      │      └ <contextlib.AsyncExitStack object at 0x000002190680C050>
+          │       │   │    │      └ {'_prefix': {'command': ('repo', 'refresh'), 'raw_command': 'repo.refresh', 'command_arg': [], 'command_start': '', 'command_...
+          │       │   │    └ GroupMessageEvent(time=1748658317, self_id=2165903274, post_type='message', sub_type='normal', user_id=2761431803, message_ty...
+          │       │   └ Bot(type='OneBot V11', self_id='2165903274')
+          │       └ <function Matcher.run at 0x0000021902162CA0>
+          └ Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 850, in run
+    await self.simple_run(bot, event, state, stack, dependency_cache)
+          │    │          │    │      │      │      └ {<function _command at 0x0000021902162DE0>: <Task finished name='Task-2727' coro=<_command() done, defined at C:\Program File...
+          │    │          │    │      │      └ <contextlib.AsyncExitStack object at 0x000002190680C050>
+          │    │          │    │      └ {'_prefix': {'command': ('repo', 'refresh'), 'raw_command': 'repo.refresh', 'command_arg': [], 'command_start': '', 'command_...
+          │    │          │    └ GroupMessageEvent(time=1748658317, self_id=2165903274, post_type='message', sub_type='normal', user_id=2761431803, message_ty...
+          │    │          └ Bot(type='OneBot V11', self_id='2165903274')
+          │    └ <function Matcher.simple_run at 0x0000021902162C00>
+          └ Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 825, in simple_run
+    await handler(
+          └ Dependent(call=refresh_repo)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\dependencies\__init__.py", line 94, in __call__
+    return await cast(Callable[..., Awaitable[R]], self.call)(**values)
+                 │    │             │         │    │    │       └ {'bot': Bot(type='OneBot V11', self_id='2165903274'), 'event': GroupMessageEvent(time=1748658317, self_id=2165903274, post_ty...
+                 │    │             │         │    │    └ <function refresh_repo at 0x000002190556A3E0>
+                 │    │             │         │    └ Dependent(call=refresh_repo)
+                 │    │             │         └ ~R
+                 │    │             └ <class 'collections.abc.Awaitable'>
+                 │    └ typing.Callable
+                 └ <function cast at 0x000002197F3E0A40>
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\commands.py", line 307, in refresh_repo
+    await check_repo_updates()
+          └ <function check_repo_updates at 0x00000219055CD6C0>
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\repo_activity.py", line 276, in check_repo_updates
+    await notify(
+          └ <function notify at 0x00000219055CD580>
+
+> File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\repo_activity.py", line 198, in notify
+    await bot.send_group_msg(group_id=group_id, message=message)
+          │                           │                 └ MessageSegment(type='text', data={'text': '🐛 **HTony03/nonebot_plugin_github_release_notifier有新issue**\n\nissue标题: "Failed to...
+          │                           └ 977787918
+          └ Bot(type='OneBot V11', self_id='2165903274')
+
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\adapter\bot.py", line 122, in call_api
+    raise exception
+          └ ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='30')
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\adapter\bot.py", line 97, in call_api
+    result = await self.adapter._call_api(self, api, **data)
+                   │    │       │         │     │      └ {'group_id': 977787918, 'message': MessageSegment(type='text', data={'text': '🐛 **HTony03/nonebot_plugin_github_release_notif...
+                   │    │       │         │     └ 'send_group_msg'
+                   │    │       │         └ Bot(type='OneBot V11', self_id='2165903274')
+                   │    │       └ <function Adapter._call_api at 0x00000219022AC680>
+                   │    └ Adapter(name='OneBot V11')
+                   └ Bot(type='OneBot V11', self_id='2165903274')
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\adapters\onebot\v11\adapter.py", line 175, in _call_api
+    return handle_api_result(await self._result_store.fetch(seq, timeout))
+           │                       │    │             │     │    └ 30.0
+           │                       │    │             │     └ 30
+           │                       │    │             └ <function ResultStore.fetch at 0x00000219022AC180>
+           │                       │    └ <nonebot.adapters.onebot.store.ResultStore object at 0x00000219021B9A90>
+           │                       └ Adapter(name='OneBot V11')
+           └ <function handle_api_result at 0x0000021902216200>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\adapters\onebot\v11\utils.py", line 58, in handle_api_result
+    raise ActionFailed(**result)
+          │              └ {'status': 'failed', 'retcode': 1000, 'data': {'message': 'TypeError: t.map is not a function'}, 'echo': '30'}
+          └ <class 'nonebot.adapters.onebot.v11.exception.ActionFailed'>
+
+nonebot.adapters.onebot.v11.exception.ActionFailed: ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='30')
+05-31 10:25:39 [INFO] nonebot | Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301) running complete
+05-31 10:27:43 [SUCCESS] nonebot | OneBot V11 2165903274 | [message.group.normal]: Message 10019 from 2761431803@[群:295484232] 'repo.refresh'
+05-31 10:27:48 [WARNING] apscheduler | Run time of job "collect_perodic_collectors (trigger: interval[0:00:02], next run at: 2025-05-31 10:27:48 CST)" was missed by 0:00:01.929293
+05-31 10:27:48 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+05-31 10:27:48 [SUCCESS] nonebot | OneBot V11 2165903274 | [message.group.normal]: Message 10020 from 2165903274@[群:295484232] 'Refreshing repository data...'
+05-31 10:27:58 [ERROR] nonebot_plugin_github_release_notifier | Failed to notify group 977787918 about commit in HTony03/nonebot_plugin_github_release_notifier: ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='56')
+Traceback (most recent call last):
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\bot.py", line 105, in <module>
+    nonebot.run()
+    │       └ <function run at 0x0000021902134AE0>
+    └ <module 'nonebot' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\nonebot\\__init__.py'>
+
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\__init__.py", line 335, in run
+    get_driver().run(*args, **kwargs)
+    │                 │       └ {}
+    │                 └ ()
+    └ <function get_driver at 0x000002190210AA20>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\drivers\fastapi.py", line 186, in run
+    uvicorn.run(
+    │       └ <function run at 0x000002190250AD40>
+    └ <module 'uvicorn' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x000002190250AF20>
+    └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x000002190250AFC0>
+           │       │   └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+           │       └ <function run at 0x000002197FA1D4E0>
+           └ <module 'asyncio' from 'C:\\Program Files\\Python313\\Lib\\asyncio\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000219061C4E40>
+           │      └ <function Runner.run at 0x000002197FE24E00>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py:70...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002197FE1E840>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 708, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x000002197FE1E7A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 679, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002197FE245E0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 2027, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002197F9EA340>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\message.py", line 476, in check_and_run_matcher
+    await _run_matcher(
+          └ <function _run_matcher at 0x0000021902215300>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\message.py", line 428, in _run_matcher
+    await matcher.run(bot, event, state, stack, dependency_cache)
+          │       │   │    │      │      │      └ {<function _command at 0x0000021902162DE0>: <Task finished name='Task-27118' coro=<_command() done, defined at C:\Program Fil...
+          │       │   │    │      │      └ <contextlib.AsyncExitStack object at 0x00000219065CA4E0>
+          │       │   │    │      └ {'_prefix': {'command': ('repo', 'refresh'), 'raw_command': 'repo.refresh', 'command_arg': [], 'command_start': '', 'command_...
+          │       │   │    └ GroupMessageEvent(time=1748658463, self_id=2165903274, post_type='message', sub_type='normal', user_id=2761431803, message_ty...
+          │       │   └ Bot(type='OneBot V11', self_id='2165903274')
+          │       └ <function Matcher.run at 0x0000021902162CA0>
+          └ Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 850, in run
+    await self.simple_run(bot, event, state, stack, dependency_cache)
+          │    │          │    │      │      │      └ {<function _command at 0x0000021902162DE0>: <Task finished name='Task-27118' coro=<_command() done, defined at C:\Program Fil...
+          │    │          │    │      │      └ <contextlib.AsyncExitStack object at 0x00000219065CA4E0>
+          │    │          │    │      └ {'_prefix': {'command': ('repo', 'refresh'), 'raw_command': 'repo.refresh', 'command_arg': [], 'command_start': '', 'command_...
+          │    │          │    └ GroupMessageEvent(time=1748658463, self_id=2165903274, post_type='message', sub_type='normal', user_id=2761431803, message_ty...
+          │    │          └ Bot(type='OneBot V11', self_id='2165903274')
+          │    └ <function Matcher.simple_run at 0x0000021902162C00>
+          └ Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 825, in simple_run
+    await handler(
+          └ Dependent(call=refresh_repo)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\dependencies\__init__.py", line 94, in __call__
+    return await cast(Callable[..., Awaitable[R]], self.call)(**values)
+                 │    │             │         │    │    │       └ {'bot': Bot(type='OneBot V11', self_id='2165903274'), 'event': GroupMessageEvent(time=1748658463, self_id=2165903274, post_ty...
+                 │    │             │         │    │    └ <function refresh_repo at 0x000002190556A3E0>
+                 │    │             │         │    └ Dependent(call=refresh_repo)
+                 │    │             │         └ ~R
+                 │    │             └ <class 'collections.abc.Awaitable'>
+                 │    └ typing.Callable
+                 └ <function cast at 0x000002197F3E0A40>
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\commands.py", line 307, in refresh_repo
+    await check_repo_updates()
+          └ <function check_repo_updates at 0x00000219055CD6C0>
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\repo_activity.py", line 276, in check_repo_updates
+    await notify(
+          └ <function notify at 0x00000219055CD580>
+
+> File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\repo_activity.py", line 198, in notify
+    await bot.send_group_msg(group_id=group_id, message=message)
+          │                           │                 └ MessageSegment(type='text', data={'text': '📜 HTony03/nonebot_plugin_github_release_notifier有新提交\n\n提交信息: fix: flask lint\n提交人...
+          │                           └ 977787918
+          └ Bot(type='OneBot V11', self_id='2165903274')
+
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\adapter\bot.py", line 122, in call_api
+    raise exception
+          └ ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='56')
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\adapter\bot.py", line 97, in call_api
+    result = await self.adapter._call_api(self, api, **data)
+                   │    │       │         │     │      └ {'group_id': 977787918, 'message': MessageSegment(type='text', data={'text': '📜 HTony03/nonebot_plugin_github_release_notifie...
+                   │    │       │         │     └ 'send_group_msg'
+                   │    │       │         └ Bot(type='OneBot V11', self_id='2165903274')
+                   │    │       └ <function Adapter._call_api at 0x00000219022AC680>
+                   │    └ Adapter(name='OneBot V11')
+                   └ Bot(type='OneBot V11', self_id='2165903274')
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\adapters\onebot\v11\adapter.py", line 175, in _call_api
+    return handle_api_result(await self._result_store.fetch(seq, timeout))
+           │                       │    │             │     │    └ 30.0
+           │                       │    │             │     └ 56
+           │                       │    │             └ <function ResultStore.fetch at 0x00000219022AC180>
+           │                       │    └ <nonebot.adapters.onebot.store.ResultStore object at 0x00000219021B9A90>
+           │                       └ Adapter(name='OneBot V11')
+           └ <function handle_api_result at 0x0000021902216200>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\adapters\onebot\v11\utils.py", line 58, in handle_api_result
+    raise ActionFailed(**result)
+          │              └ {'status': 'failed', 'retcode': 1000, 'data': {'message': 'TypeError: t.map is not a function'}, 'echo': '56'}
+          └ <class 'nonebot.adapters.onebot.v11.exception.ActionFailed'>
+
+nonebot.adapters.onebot.v11.exception.ActionFailed: ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='56')
+05-31 10:28:57 [WARNING] apscheduler | Run time of job "fetch_bilibili_updates (trigger: cron[second='0'], next run at: 2025-05-31 10:29:00 CST)" was missed by 0:00:57.081421
+05-31 10:28:57 [WARNING] apscheduler | Run time of job "fetch_bilibili_live_info (trigger: cron[second='0'], next run at: 2025-05-31 10:29:00 CST)" was missed by 0:00:57.083476
+05-31 10:28:57 [ERROR] nonebot_plugin_github_release_notifier | Failed to notify group 977787918 about issue in HTony03/nonebot_plugin_github_release_notifier: ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='57')
+Traceback (most recent call last):
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\bot.py", line 105, in <module>
+    nonebot.run()
+    │       └ <function run at 0x0000021902134AE0>
+    └ <module 'nonebot' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\nonebot\\__init__.py'>
+
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\__init__.py", line 335, in run
+    get_driver().run(*args, **kwargs)
+    │                 │       └ {}
+    │                 └ ()
+    └ <function get_driver at 0x000002190210AA20>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\drivers\fastapi.py", line 186, in run
+    uvicorn.run(
+    │       └ <function run at 0x000002190250AD40>
+    └ <module 'uvicorn' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x000002190250AF20>
+    └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x000002190250AFC0>
+           │       │   └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+           │       └ <function run at 0x000002197FA1D4E0>
+           └ <module 'asyncio' from 'C:\\Program Files\\Python313\\Lib\\asyncio\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000219061C4E40>
+           │      └ <function Runner.run at 0x000002197FE24E00>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py:70...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002197FE1E840>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 708, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x000002197FE1E7A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 679, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002197FE245E0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 2027, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002197F9EA340>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\message.py", line 476, in check_and_run_matcher
+    await _run_matcher(
+          └ <function _run_matcher at 0x0000021902215300>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\message.py", line 428, in _run_matcher
+    await matcher.run(bot, event, state, stack, dependency_cache)
+          │       │   │    │      │      │      └ {<function _command at 0x0000021902162DE0>: <Task finished name='Task-27118' coro=<_command() done, defined at C:\Program Fil...
+          │       │   │    │      │      └ <contextlib.AsyncExitStack object at 0x00000219065CA4E0>
+          │       │   │    │      └ {'_prefix': {'command': ('repo', 'refresh'), 'raw_command': 'repo.refresh', 'command_arg': [], 'command_start': '', 'command_...
+          │       │   │    └ GroupMessageEvent(time=1748658463, self_id=2165903274, post_type='message', sub_type='normal', user_id=2761431803, message_ty...
+          │       │   └ Bot(type='OneBot V11', self_id='2165903274')
+          │       └ <function Matcher.run at 0x0000021902162CA0>
+          └ Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 850, in run
+    await self.simple_run(bot, event, state, stack, dependency_cache)
+          │    │          │    │      │      │      └ {<function _command at 0x0000021902162DE0>: <Task finished name='Task-27118' coro=<_command() done, defined at C:\Program Fil...
+          │    │          │    │      │      └ <contextlib.AsyncExitStack object at 0x00000219065CA4E0>
+          │    │          │    │      └ {'_prefix': {'command': ('repo', 'refresh'), 'raw_command': 'repo.refresh', 'command_arg': [], 'command_start': '', 'command_...
+          │    │          │    └ GroupMessageEvent(time=1748658463, self_id=2165903274, post_type='message', sub_type='normal', user_id=2761431803, message_ty...
+          │    │          └ Bot(type='OneBot V11', self_id='2165903274')
+          │    └ <function Matcher.simple_run at 0x0000021902162C00>
+          └ Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 825, in simple_run
+    await handler(
+          └ Dependent(call=refresh_repo)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\dependencies\__init__.py", line 94, in __call__
+    return await cast(Callable[..., Awaitable[R]], self.call)(**values)
+                 │    │             │         │    │    │       └ {'bot': Bot(type='OneBot V11', self_id='2165903274'), 'event': GroupMessageEvent(time=1748658463, self_id=2165903274, post_ty...
+                 │    │             │         │    │    └ <function refresh_repo at 0x000002190556A3E0>
+                 │    │             │         │    └ Dependent(call=refresh_repo)
+                 │    │             │         └ ~R
+                 │    │             └ <class 'collections.abc.Awaitable'>
+                 │    └ typing.Callable
+                 └ <function cast at 0x000002197F3E0A40>
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\commands.py", line 307, in refresh_repo
+    await check_repo_updates()
+          └ <function check_repo_updates at 0x00000219055CD6C0>
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\repo_activity.py", line 276, in check_repo_updates
+    await notify(
+          └ <function notify at 0x00000219055CD580>
+
+> File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\src\plugins\nonebot_plugin_github_release_notifier\repo_activity.py", line 198, in notify
+    await bot.send_group_msg(group_id=group_id, message=message)
+          │                           │                 └ MessageSegment(type='text', data={'text': '🐛 **HTony03/nonebot_plugin_github_release_notifier有新issue**\n\nissue标题: "Failed to...
+          │                           └ 977787918
+          └ Bot(type='OneBot V11', self_id='2165903274')
+
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\adapter\bot.py", line 122, in call_api
+    raise exception
+          └ ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='57')
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\adapter\bot.py", line 97, in call_api
+    result = await self.adapter._call_api(self, api, **data)
+                   │    │       │         │     │      └ {'group_id': 977787918, 'message': MessageSegment(type='text', data={'text': '🐛 **HTony03/nonebot_plugin_github_release_notif...
+                   │    │       │         │     └ 'send_group_msg'
+                   │    │       │         └ Bot(type='OneBot V11', self_id='2165903274')
+                   │    │       └ <function Adapter._call_api at 0x00000219022AC680>
+                   │    └ Adapter(name='OneBot V11')
+                   └ Bot(type='OneBot V11', self_id='2165903274')
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\adapters\onebot\v11\adapter.py", line 175, in _call_api
+    return handle_api_result(await self._result_store.fetch(seq, timeout))
+           │                       │    │             │     │    └ 30.0
+           │                       │    │             │     └ 57
+           │                       │    │             └ <function ResultStore.fetch at 0x00000219022AC180>
+           │                       │    └ <nonebot.adapters.onebot.store.ResultStore object at 0x00000219021B9A90>
+           │                       └ Adapter(name='OneBot V11')
+           └ <function handle_api_result at 0x0000021902216200>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\adapters\onebot\v11\utils.py", line 58, in handle_api_result
+    raise ActionFailed(**result)
+          │              └ {'status': 'failed', 'retcode': 1000, 'data': {'message': 'TypeError: t.map is not a function'}, 'echo': '57'}
+          └ <class 'nonebot.adapters.onebot.v11.exception.ActionFailed'>
+
+nonebot.adapters.onebot.v11.exception.ActionFailed: ActionFailed(status='failed', retcode=1000, data={'message': 'TypeError: t.map is not a function'}, echo='57')
+05-31 10:29:18 [INFO] uvicorn | Shutting down
+05-31 10:29:18 [WARNING] nonebot | OneBot V11 | WebSocket for Bot 2165903274 closed by peer
+05-31 10:29:18 [INFO] websockets | connection closed
+05-31 10:29:18 [INFO] nonebot_plugin_saa | pop bot Bot(type='OneBot V11', self_id='2165903274')
+05-31 10:29:18 [INFO] uvicorn | Waiting for application shutdown.
+05-31 10:29:18 [INFO] nonebot | Matcher(type='message', module=src.plugins.nonebot_plugin_github_release_notifier.commands, lineno=301) running complete
+05-31 10:29:18 [INFO] nonebot_plugin_apscheduler | Scheduler Shutdown
+05-31 10:29:18 [WARNING] nonebot_plugin_htmlrender | 关闭 playwright 时发生错误。
+Traceback (most recent call last):
+
+  File "C:\Users\Administrator\Desktop\nonebot_Htony03\nb_indev\bot.py", line 105, in <module>
+    nonebot.run()
+    │       └ <function run at 0x0000021902134AE0>
+    └ <module 'nonebot' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\nonebot\\__init__.py'>
+
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\__init__.py", line 335, in run
+    get_driver().run(*args, **kwargs)
+    │                 │       └ {}
+    │                 └ ()
+    └ <function get_driver at 0x000002190210AA20>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\drivers\fastapi.py", line 186, in run
+    uvicorn.run(
+    │       └ <function run at 0x000002190250AD40>
+    └ <module 'uvicorn' from 'C:\\Program Files\\Python313\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x000002190250AF20>
+    └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x000002190250AFC0>
+           │       │   └ <uvicorn.server.Server object at 0x00000219060AEBA0>
+           │       └ <function run at 0x000002197FA1D4E0>
+           └ <module 'asyncio' from 'C:\\Program Files\\Python313\\Lib\\asyncio\\__init__.py'>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000219061C4E40>
+           │      └ <function Runner.run at 0x000002197FE24E00>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Program Files\Python313\Lib\site-packages\uvicorn\server.py:70...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002197FE1E840>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000219060AEE40>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 708, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x000002197FE1E7A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 679, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002197FE245E0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 2027, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002197F9EA340>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup()>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\lifespan\on.py", line 86, in main
+    await app(scope, self.receive, self.send)
+          │   │      │    │        │    └ <function LifespanOn.send at 0x0000021906299440>
+          │   │      │    │        └ <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>
+          │   │      │    └ <function LifespanOn.receive at 0x00000219062994E0>
+          │   │      └ <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>
+          │   └ {'type': 'lifespan', 'asgi': {'version': '3.0', 'spec_version': '2.0'}, 'state': {}, 'app': <fastapi.applications.FastAPI obj...
+          └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000021906254D70>
+  File "C:\Program Files\Python313\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 29, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method LifespanOn.send of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+                 │    │   │      └ <bound method LifespanOn.receive of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+                 │    │   └ {'type': 'lifespan', 'asgi': {'version': '3.0', 'spec_version': '2.0'}, 'state': {}, 'app': <fastapi.applications.FastAPI obj...
+                 │    └ <fastapi.applications.FastAPI object at 0x00000219027F5160>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000021906254D70>
+  File "C:\Program Files\Python313\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method LifespanOn.send of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+                           │      └ <bound method LifespanOn.receive of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+                           └ {'type': 'lifespan', 'asgi': {'version': '3.0', 'spec_version': '2.0'}, 'state': {}, 'app': <fastapi.applications.FastAPI obj...
+  File "C:\Program Files\Python313\Lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method LifespanOn.send of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │                │      └ <bound method LifespanOn.receive of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │                └ {'type': 'lifespan', 'asgi': {'version': '3.0', 'spec_version': '2.0'}, 'state': {}, 'app': <fastapi.applications.FastAPI obj...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000021906256120>
+          └ <fastapi.applications.FastAPI object at 0x00000219027F5160>
+  File "C:\Program Files\Python313\Lib\site-packages\starlette\middleware\errors.py", line 152, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method LifespanOn.send of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │   │      └ <bound method LifespanOn.receive of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │   └ {'type': 'lifespan', 'asgi': {'version': '3.0', 'spec_version': '2.0'}, 'state': {}, 'app': <fastapi.applications.FastAPI obj...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000021906255FD0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000021906256120>
+  File "C:\Program Files\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 48, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method LifespanOn.send of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │   │      └ <bound method LifespanOn.receive of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │   └ {'type': 'lifespan', 'asgi': {'version': '3.0', 'spec_version': '2.0'}, 'state': {}, 'app': <fastapi.applications.FastAPI obj...
+          │    └ <fastapi.routing.APIRouter object at 0x000002190219F9D0>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000021906255FD0>
+  File "C:\Program Files\Python313\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method LifespanOn.send of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │                │      └ <bound method LifespanOn.receive of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │                └ {'type': 'lifespan', 'asgi': {'version': '3.0', 'spec_version': '2.0'}, 'state': {}, 'app': <fastapi.applications.FastAPI obj...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x000002190219F9D0>>
+          └ <fastapi.routing.APIRouter object at 0x000002190219F9D0>
+  File "C:\Program Files\Python313\Lib\site-packages\starlette\routing.py", line 724, in app
+    await self.lifespan(scope, receive, send)
+          │    │        │      │        └ <bound method LifespanOn.send of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │        │      └ <bound method LifespanOn.receive of <uvicorn.lifespan.on.LifespanOn object at 0x0000021906255A90>>
+          │    │        └ {'type': 'lifespan', 'asgi': {'version': '3.0', 'spec_version': '2.0'}, 'state': {}, 'app': <fastapi.applications.FastAPI obj...
+          │    └ <function Router.lifespan at 0x0000021902808AE0>
+          └ <fastapi.routing.APIRouter object at 0x000002190219F9D0>
+  File "C:\Program Files\Python313\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               │    │                │       └ None
+               │    │                └ <fastapi.applications.FastAPI object at 0x00000219027F5160>
+               │    └ <bound method Driver._lifespan_manager of Driver(type='fastapi', adapters=1, bots=0)>
+               └ <fastapi.routing.APIRouter object at 0x000002190219F9D0>
+  File "C:\Program Files\Python313\Lib\contextlib.py", line 221, in __aexit__
+    await anext(self.gen)
+                │    └ <async_generator object Driver._lifespan_manager at 0x0000021906269E00>
+                └ <contextlib._AsyncGeneratorContextManager object at 0x0000021906255E80>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\drivers\fastapi.py", line 157, in _lifespan_manager
+    await self._lifespan.shutdown()
+          │    │         └ <function Lifespan.shutdown at 0x0000021901893EC0>
+          │    └ <nonebot.internal.driver._lifespan.Lifespan object at 0x00000219027F5010>
+          └ Driver(type='fastapi', adapters=1, bots=0)
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 49, in shutdown
+    await self._run_lifespan_func(self._shutdown_funcs)
+          │    │                  │    └ [<bound method Adapter._stop of Adapter(name='OneBot V11')>, <function _shutdown_scheduler at 0x0000021902970220>, <function ...
+          │    │                  └ <nonebot.internal.driver._lifespan.Lifespan object at 0x00000219027F5010>
+          │    └ <staticmethod(<function Lifespan._run_lifespan_func at 0x0000021901893D80>)>
+          └ <nonebot.internal.driver._lifespan.Lifespan object at 0x00000219027F5010>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 36, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+          │    │                    └ <function shutdown at 0x00000219053C4AE0>
+          │    └ typing.Callable[[], collections.abc.Awaitable[typing.Any]]
+          └ <function cast at 0x000002197F3E0A40>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+          └ <function shutdown_browser at 0x00000219053C42C0>
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 121, in shutdown_browser
+    with _suppress_and_log():
+         └ <function _suppress_and_log at 0x00000219053B3EC0>
+  File "C:\Program Files\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    │    │   │     └ Exception('Browser.close: Connection closed while reading from the driver')
+    │    │   └ <method 'throw' of 'generator' objects>
+    │    └ <generator object _suppress_and_log at 0x00000219084629B0>
+    └ <contextlib._GeneratorContextManager object at 0x00000219084059B0>
+> File "C:\Program Files\Python313\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 26, in _suppress_and_log
+    yield
+  File "C:\Program Files\Python313\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 122, in shutdown_browser
+    await _browser.close()
+          │        └ <function Browser.close at 0x000002190539CD60>
+          └ <Browser type=<BrowserType name=chromium executable_path=C:\Users\Administrator\AppData\Local\ms-playwright\chromium-1148\chr...
+  File "C:\Program Files\Python313\Lib\site-packages\playwright\async_api\_generated.py", line 14176, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+           │       │                     │    │         │            └ None
+           │       │                     │    │         └ <function Browser.close at 0x0000021905371580>
+           │       │                     │    └ <Browser type=<BrowserType name=chromium executable_path=C:\Users\Administrator\AppData\Local\ms-playwright\chromium-1148\chr...
+           │       │                     └ <Browser type=<BrowserType name=chromium executable_path=C:\Users\Administrator\AppData\Local\ms-playwright\chromium-1148\chr...
+           │       └ <function ImplToApiMapping.from_maybe_impl at 0x00000219051A6840>
+           └ <playwright._impl._impl_to_api_mapping.ImplToApiMapping object at 0x000002190527D010>
+  File "C:\Program Files\Python313\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "C:\Program Files\Python313\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+          │    │        │                        └ None
+          │    │        └ <function Channel.send at 0x00000219051C5620>
+          │    └ <playwright._impl._connection.Channel object at 0x000002190628D310>
+          └ <Browser type=<BrowserType name=chromium executable_path=C:\Users\Administrator\AppData\Local\ms-playwright\chromium-1148\chr...
+  File "C:\Program Files\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+                 │    │           └ <function Connection.wrap_api_call at 0x00000219051C79C0>
+                 │    └ <playwright._impl._connection.Connection object at 0x00000219062567B0>
+                 └ <playwright._impl._connection.Channel object at 0x000002190628D310>
+  File "C:\Program Files\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+          │                       └ {'frames': [{'file': 'C:\\Program Files\\Python313\\Lib\\site-packages\\nonebot_plugin_htmlrender\\browser.py', 'line': 122, ...
+          └ <function rewrite_error at 0x00000219051A40E0>
+
+Exception: Browser.close: Connection closed while reading from the driver
+05-31 10:29:18 [INFO] nonebot_plugin_htmlrender | Browser Stopped.
+05-31 10:29:18 [INFO] uvicorn | Application shutdown complete.
+05-31 10:29:18 [INFO] uvicorn | Finished server process [25636]
